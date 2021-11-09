@@ -29,9 +29,12 @@ public class WeatherData implements Subject {
   // 모든 옵저버들이 가지고 있는 update() 메소드를 이용하여 옵저버들에게 상태를 갱신
   @Override
   public void notifyObservers() {
-     for (Observer observer : observers) {
-       observer.update(temperature, humidity, pressure);
-     }
+//    for (int i = 0; i < observers.size(); i++) {
+//      observers.get(i).update(temperature, humidity, pressure);
+//    }
+    for (Observer observer : observers) {
+      observer.update(temperature, humidity, pressure);
+    }
   }
 
   // 기상 스테이션으로부터 갱신된 측정치를 받으면 옵저버들에게 알리는 notifyObservers()를 호출한다
