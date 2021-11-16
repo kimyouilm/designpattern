@@ -1,6 +1,6 @@
 package decoratorPattern.case1;
 
-// Decorator 적용 X
+// Decorator 적용
 public class Frappuccino extends Beverage {
 
   public Frappuccino() {
